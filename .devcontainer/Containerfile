@@ -28,8 +28,8 @@ USER $USERNAME
 ENV HOME=/home/$USERNAME
 # Install mise
 ARG MISE_PACKAGES=""
-RUN curl https://mise.run | sh
-RUN ~/.local/bin/mise use --global \
+RUN curl https://mise.run | sh && \
+  ~/.local/bin/mise use --global \
   fd@latest \
   eza@latest \
   ripgrep@latest \
@@ -38,5 +38,7 @@ RUN ~/.local/bin/mise use --global \
   zoxide@latest \
   lazygit@latest \
   neovim@stable \
-  chezmoi@latest \
-  $MISE_PACKAGES
+  node@22.18.0 \
+  python@3.13 \
+  chezmoi@latest
+RUN ~/.local/bin/mise use --global $MISE_PACKAGES
