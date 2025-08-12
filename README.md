@@ -3,4 +3,4 @@
 ## Todo items
 
 - [ ] X11 forwarding
-- [ ] Supress neovim error messages
+- [ ] git config (name and email)
