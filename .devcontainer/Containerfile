@@ -40,7 +40,7 @@ RUN curl https://mise.run | sh && \
   starship@latest \
   zoxide@latest \
   lazygit@latest \
-  neovim@stable \
+  neovim@latest \
   node@22.18.0 \
   python@3.13 \
   chezmoi@latest
