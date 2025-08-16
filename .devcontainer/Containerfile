@@ -1,5 +1,8 @@
 FROM buildpack-deps:trixie
 
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+
 # Create user and set home, with sudo access
 ARG USERNAME=devcontainer
 ARG USER_UID=1000
